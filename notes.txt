@@ -1,0 +1,25 @@
+/* //GET Method - Getting All records
+app.get('/hello', (req, res) => {
+    res.send("GET - Hello world");
+})
+
+//POST Method - adding new data
+app.post('/hello', (req, res) => {
+    res.send(`Hello ${req.body.Name}!`);
+})
+
+
+//Fetchning specific data by name
+app.get('/hello/:Name', (req, res) => {
+    const {Name} = req.params;
+    res.send(`Hello ${Name}!!!!`)
+    console.log(req.params)
+})
+
+//Fetching by multiple name
+app.get('/hello/:Name/goodbye/:OtherName', (req, res) => {
+    const {Name_2} = req.params;
+    res.send(`Hello ${Name_2}!!`)
+    console.log(req.params)
+})
+  */
